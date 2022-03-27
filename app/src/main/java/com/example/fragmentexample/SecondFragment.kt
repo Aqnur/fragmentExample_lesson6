@@ -11,30 +11,12 @@ import com.example.fragmentexample.databinding.FragmentSecondBinding
 class SecondFragment : Fragment() {
 
     private lateinit var binding: FragmentSecondBinding
-    private var data: String ?= null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentSecondBinding.inflate(inflater, container, false)
         return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        binding.text.text = data
-    }
-
-    companion object {
-
-        @JvmStatic
-        fun newInstance(data: String) : SecondFragment {
-
-            val fragment = SecondFragment()
-            fragment.data = data
-            return fragment
-        }
     }
 }
