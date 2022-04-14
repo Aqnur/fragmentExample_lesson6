@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppBarLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="elevation">0dp</item>
+        <item name="android:background">@color/design_default_color_primary_dark</item>
+    </style>
+
+    <style name="ToolbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="theme">@style/ThemeOverlay.MaterialComponents.Dark</item>
+        <item name="popupTheme">@style/ThemeOverlay.MaterialComponents.Light</item>
+    </style>
+
+    <style name="NavigationViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="android:theme">@style/NavigationViewTheme</item>
+    </style>
+
+    <style name="NavigationViewTheme">
+        <item name="android:listDivider">@color/transparent</item>
+    </style>
+
+</resources>

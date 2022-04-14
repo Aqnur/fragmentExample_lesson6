@@ -1,9 +1,7 @@
 package com.example.fragmentexample
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.fragmentexample.databinding.FragmentFirstBinding
@@ -11,6 +9,11 @@ import com.example.fragmentexample.databinding.FragmentFirstBinding
 class FirstFragment : Fragment() {
 
     private lateinit var binding: FragmentFirstBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,6 +34,10 @@ class FirstFragment : Fragment() {
         findNavController().navigate(
             FirstFragmentDirections.actionFirstFragmentToBlankFragment("Detail")
         )
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu, menu)
     }
 
 //    companion object {
