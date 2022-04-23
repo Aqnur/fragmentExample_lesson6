@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation_second_fragment"
+    android:id="@+id/navigation_second"
     app:startDestination="@id/secondFragment">
 
     <fragment
@@ -10,4 +10,5 @@
         android:name="com.example.fragmentexample.SecondFragment"
         tools:layout="@layout/fragment_second"/>
 
+    <include app:graph="@navigation/blank" />
 </navigation>

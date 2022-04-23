@@ -32,7 +32,8 @@ class FirstFragment : Fragment() {
 
     private fun openDetailFragment() {
         findNavController().navigate(
-            FirstFragmentDirections.actionFirstFragmentToBlankFragment("Detail")
+            R.id.navigation_blank,
+            BlankFragmentArgs("asdasf").toBundle()
         )
     }
 
